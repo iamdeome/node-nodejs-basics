@@ -1,5 +1,12 @@
+import process from 'node:process';
+
 const parseArgs = () => {
-    // Write your code here 
+    if (process.argv.length === 2) {
+        console.error('please enter at least one argument');
+        process.exit;
+    }
+
+    
 };
 
 parseArgs();
